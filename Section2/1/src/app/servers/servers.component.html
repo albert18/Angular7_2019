@@ -2,6 +2,13 @@
   class="btn btn-primary"
   [disabled]="!allowNewServer">Add Server</button>
 
+
+<!-- String interpolation -->
+  <p [innerText]="allowNewServer"></p>
+  <!-- or -->
+  <p>{{ allowNewServer }}</p>
+<!-- String interpolation -->
+
   <!-- App Server -->
 <app-server></app-server>
 
