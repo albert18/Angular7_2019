@@ -25,10 +25,20 @@
 <!-- <p>{{serverCreationStatus}}</p> -->
 
 <!-- Dont mix property binding and string interpolation -->
-  <!-- {{allowNewServer}} -->
-  <!-- <p [innerText]="allowNewServer"></p> -->
-<!-- Dont mix property binding and string interpolation -->
+  <!-- {{allowNewServer}}
+  <p [innerText]="allowNewServer"></p>  -->
 
+<!-- -----------------------------------------------------NG IF -->
 <p *ngIf="ServerCreated" >Server was created, server name is {{ServerName}}</p>
+
+<!-- ---------------------OPTIONAL --------------------->
+<!-- <p *ngIf="ServerCreated; else noServer" >Server was created, server name is {{ServerName}}</p>
+<ng-template #noServer>
+  <p>
+    No Server was created!!
+  </p>
+</ng-template> -->
+<!-- -----------------------------------------------------NG IF -->
+
 
 <app-server></app-server>
