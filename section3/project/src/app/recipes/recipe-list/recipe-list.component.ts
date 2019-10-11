@@ -9,7 +9,7 @@ import { Recipe } from '../recipe.model';
 })
 export class RecipeListComponent implements OnInit {
   recipes: Recipe[] = [
-    new Recipe('TestName', 'Chicken with Rice', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3mvK-AdTor1dyWZ9J_d0RAGfBTqgY5W8FtADQwnKyG2Ih1i0OtA')
+    new Recipe('Delicious Food', 'Chicken with Rice', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3mvK-AdTor1dyWZ9J_d0RAGfBTqgY5W8FtADQwnKyG2Ih1i0OtA')
   ];
 
 
